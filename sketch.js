@@ -1,14 +1,25 @@
 let w1;
+let w2;
+let w3;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   w1 = new Walker(200, 200);
+  w2 = new Walker(300, 300);
+  w3 = new Walker(500, 500);
 
 }
 
 function draw() {
   w1.update();
   w1.display();
+  w2.update();
+  w2.display();
+  w3.update();
+  w3.display();
+
+
+
 
 }
 class Walker {
